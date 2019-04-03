@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+  height: 100vh;
+}
+
+* body .container {
+  width: 100%;
+  height: 100%;
+}
+
+* body .container .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+* body .container .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .container .navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+* body .container .navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+* body .container .navbar ul li a:hover {
+  color: skyblue;
+}
+
+* body .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .container section h1 {
+  font-size: 4rem;
+}
+
+* body .container section h2 {
+  font-size: 3rem;
+}
+
+* body .container section h3 {
+  font-size: 2rem;
+}
+
+* body .container section p {
+  font-size: 1.5rem;
+}
+
+* body .container section .info {
+  opacity: 0;
+  height: 400px;
+  width: 900px;
+  padding: 50px;
+  border-radius: 5px;
+  background-color: rgba(189, 189, 189, 0.7);
+}
+
+* body .container section .info img {
+  height: 200px;
+  width: auto;
+  float: left;
+}
+
+* body .container section#home {
+  background: url("https://source.unsplash.com/jrNY1BZhnJg/1600x900") no-repeat center center/cover;
+}
+
+* body .container section#home .boxAnimation {
+  height: 200px;
+  width: 300px;
+}
+
+* body .container section#home .boxAnimation .box {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  display: inline-block;
+  background-color: #fff;
+}
+
+* body .container section#about {
+  background: url("https://source.unsplash.com/FsK54FVNRfM/1600x900") no-repeat center center/cover;
+}
+
+* body .container section#myWork {
+  background: url("https://source.unsplash.com/_l6v3cQ7KAs/1600x900") no-repeat center center/cover;
+}
+
+* body .container section#myWork #slider, * body .container section#myWork .slide-content {
+  overflow: hidden;
+  margin-left: 40px;
+  width: 90%;
+  height: 100vh;
+}
+
+* body .container section#myWork .info {
+  position: relative;
+}
+
+* body .container section#myWork .slide {
+  border-radius: 5px;
+  height: 50%;
+}
+
+* body .container section#myWork .slide img {
+  -webkit-box-shadow: 1px 1px 5px 1px #323232;
+          box-shadow: 1px 1px 5px 1px #323232;
+  margin-right: 20px;
+}
+
+* body .container section#myWork .slide span {
+  color: #fff;
+}
+
+* body .container section#myWork .arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+* body .container section#myWork #arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #323232 transparent transparent;
+  opacity: 0.5;
+  left: 0;
+  margin-left: 30px;
+}
+
+* body .container section#myWork #arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #323232;
+  opacity: 0.5;
+  right: 0;
+  margin-right: 30px;
+}
+
+* body .container section#contact {
+  background: url("https://source.unsplash.com/8NYDK56hQhM/1600x900") no-repeat center center/cover;
+}
+
+* body .container section#contact #contactForm {
+  text-align: center;
+}
+
+* body .container section#contact #contactForm #contactMessage {
+  border-radius: 5px;
+  height: 70px;
+  width: 350px;
+  resize: none;
+}
+
+* body .container section#contact #contactForm #contactName, * body .container section#contact #contactForm #contactMail, * body .container section#contact #contactForm #contactSubject {
+  border-radius: 5px;
+  height: 35px;
+  width: 350px;
+}
+/*# sourceMappingURL=main.css.map */

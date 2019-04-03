@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: #333;
+        color:#fff;
+        line-height: 1.6;
+        height: 100vh;
+        // overflow: hidden;
+        .container {
+            width: 100%;
+            height: 100%;
+            // overflow-y: scroll;
+            // scroll-behavior: smooth;
+            // scroll-snap-type: y mandatory;
+            .navbar {
+                position: fixed;
+                top: 0;
+                z-index: 1;
+                display: flex;
+                width: 100%;
+                height: 60px;
+                background: rgba(0,0,0,0.7);
+                ul {
+                    display: flex;
+                    list-style: none;
+                    width: 100%;
+                    justify-content: center;
+                    li {
+                        margin: 0 1rem;
+                        padding: 1rem;
+                        a {
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: #f4f4f4;
+                        }
+                        a:hover {
+                            color: skyblue;
+                        }
+                    }
+                }
+            }
+            section {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                scroll-snap-align: center;
+                align-items: center;
+                justify-content: center;
+                h1{ font-size: 4rem; }
+                h2{ font-size: 3rem; }
+                h3{ font-size: 2rem; }
+                p { font-size: 1.5rem; }
+                .info {
+                    opacity: 0;
+                    height: 400px;
+                    width: 900px;
+                    padding: 50px;
+                    border-radius: 5px;
+                    background-color: rgba(189, 189, 189, 0.7);
+                    img {
+                        height: 200px;
+                        width: auto;
+                        float: left;
+                    }
+                }
+            }
+            section#home {
+                background: url('https://source.unsplash.com/jrNY1BZhnJg/1600x900') no-repeat center center/cover;;
+                .boxAnimation {
+                    height: 200px;
+                    width: 300px;
+                    .box {
+                        width: 20px;
+                        height: 20px;
+                        margin: 2px;
+                        display: inline-block;
+                        background-color: #fff;
+                    }
+                }
+                
+            }
+            section#about {
+                background: url('https://source.unsplash.com/FsK54FVNRfM/1600x900') no-repeat center center/cover;;
+            }
+            section#myWork {
+                background: url('https://source.unsplash.com/_l6v3cQ7KAs/1600x900') no-repeat center center/cover;;
+                #slider, .slide-content {
+                    overflow: hidden;
+                    margin-left: 40px;
+                    width: 90%;
+                    height: 100vh;
+                }
+                .info { 
+                    position: relative; 
+                    
+                }
+                .slide {                    
+                        
+                    border-radius:5px;
+                    height: 50%;
+                    img {
+                        box-shadow: 1px 1px 5px 1px #323232;
+                        margin-right: 20px;
+                    }
+                    span {
+                        color: #fff;
+                    }
+                }
+                .arrow {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 40%;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;                    
+                }
+                #arrow-left {
+                    border-width: 30px 40px 30px 0;
+                    border-color: transparent #323232 transparent transparent;
+                    opacity: 0.5;
+                    left: 0;
+                    margin-left: 30px;
+                }
+                #arrow-right {
+                    border-width: 30px 0 30px 40px;
+                    border-color: transparent transparent transparent #323232;
+                    opacity: 0.5;
+                    right: 0;
+                    margin-right: 30px;
+                }
+            }
+            section#contact {
+                background: url('https://source.unsplash.com/8NYDK56hQhM/1600x900') no-repeat center center/cover;;
+                #contactForm {
+                    text-align: center;
+                    #contactMessage {
+                        border-radius: 5px;
+                        height: 70px;
+                        width: 350px;
+                        resize: none;
+                    }
+                    #contactName, #contactMail, #contactSubject {
+                        border-radius: 5px;
+                        height: 35px;
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
